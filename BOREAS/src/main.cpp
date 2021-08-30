@@ -11,6 +11,12 @@ long  ppm = 0;
 int ppm_sus =  ppm;
 float Rs_media = 0;
 float conatdor = 0;
+const char* ssid = "ESP-WIFI_1";  
+const char* password = "ESP-PASSWORD"; 
+IPAddress ip(192,168,4,22);        
+IPAddress gateway(192,168,4,9);     
+IPAddress subnet(255,255,255,0);    
+WebServer server(80); 
  String primera_parte = "<!DOCTYPE html> \
 <html lang=\"en\">\
   <head>\
@@ -158,13 +164,6 @@ void loop1(void *parameter){
 }
  
 
-// Creamos nuestra propia red -> SSID & Password
-const char* ssid = "ESP-WIFI_1";  
-const char* password = "ESP-PASSWORD"; // opcional softAP()
-IPAddress ip(192,168,4,22);         //(192, 168, 1, 1)
-IPAddress gateway(192,168,4,9);     //(192, 168, 1, 1)
-IPAddress subnet(255,255,255,0);    //(255, 255, 255, 0)
-WebServer server(80);  // puerto por defecto 80
 
 void handleConnectionRoot() {
   String final_1 = primera_parte + String(ppm) + segunda_parte + String(Rs_media) + tercera_Parte + String(Rs) + cuarta_parte;
@@ -174,8 +173,6 @@ void handleConnectionRoot() {
 
 void setup() {
   Serial.begin(115200);
-  
- 
   xTaskCreatePinnedToCore(
       loop1,
       "Task_3",
@@ -184,28 +181,16 @@ void setup() {
       0,
       &Task3,
       0);
- 
-  // Creamos el punto de acceso
-  WiFi.softAP(ssid, password); // Tiene mas parametros opcionales
+   WiFi.softAP(ssid, password); 
   WiFi.softAPConfig(ip, gateway, subnet);
-  //IPAddress ip = WiFi.softAPIP();
-//  Serial.println(ip);
- 
- 
   Serial.print("Nombre de mi red esp32: ");
   Serial.println(ssid);
- 
   server.on("/", handleConnectionRoot);
- 
   server.begin();
   Serial.println("Servidor HTTP iniciado");
   delay(150);
-  
 pinMode(34,INPUT);
-
-Serial.begin(9600);
-CO2 = analogRead(34);
- 
+pinMode(2,OUTPUT);
 Serial.println("########################");
 Serial.println("#                      #");
 Serial.println("#      CALIBRANDO!     #");
@@ -218,7 +203,6 @@ Rs = 1024*(20000/analogRead(34))-20000;
 Serial.println(Rs);
 conatdor = conatdor + Rs;
 Serial.println(conatdor);
-
 delay(10);
 }
 Serial.println(conatdor);
@@ -238,14 +222,10 @@ Serial.print(" ppm\n");
 mg = ppm * 0.0409 * 44.01;
 Serial.print(mg);
 Serial.print(" mg/m3\n");
-
-
-
-delay(1000);
-
 if (ppm > 800){
 digitalWrite(2,HIGH);
 }else{
 digitalWrite(2,LOW);
 }
+delay(100);
 }
