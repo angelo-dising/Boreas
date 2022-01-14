@@ -1,2 +1,2 @@
 # BOREAS
- Universal air transmision virus detector (COVID-19 calibration)
+ Dectector de co2 para aproximar probabilidad de contagio de co2
