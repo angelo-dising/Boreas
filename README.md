@@ -15,7 +15,7 @@ de contagio por covid 19.
 
 - Uso de un "True CO2 sensor" como sensor para hacer los calculos
 - Integracion con esp32 y posibilidad de usar otras placas de desarrollo
-- Facil de programar y hacer mmodificaciones; todo esta documentado den el codigo con comentarios de que paramatros modificar a conveniencia
+- Facil de programar y hacer modificaciones; todo esta documentado den el codigo con comentarios de que paramatros modificar a conveniencia
 
 
 
