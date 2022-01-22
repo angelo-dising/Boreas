@@ -28,6 +28,6 @@ de contagio por covid 19.
 
 ## Imagenes
 
-![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/D_NQ_NP_758950-MCO44754605883_012021-O.jpg)
+![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/photo5141194141462538749.jpg)
 
 
