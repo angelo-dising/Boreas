@@ -19,7 +19,7 @@ de contagio por covid 19.
 
 
 
-## Authors
+## Autores🤖🤖
 
 - [Markt77](https://github.com/Markt77)
 - [Angelo](https://github.com/angelo-dising)
