@@ -32,6 +32,13 @@ de contagio por covid 19.
 ![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/FOTOS/photo5141194141462538751.jpg)
 ![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/FOTOS/photo5141194141462538750.jpg)
 
+##PCB
+
+![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/FOTOS/PCB.png)
+
+Puedes descargar el gerber [aqui](https://github.com/angelo-dising/Boreas/raw/main/PCB/BOREAS_PCB.zip)
+
+
 
 
 
