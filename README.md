@@ -38,7 +38,13 @@ de contagio por covid 19.
 
 Puedes descargar el gerber [aqui](https://github.com/angelo-dising/Boreas/raw/main/PCB/BOREAS_PCB.zip)
 
+## Requisitos de instalacion
+### Tener instaladas las siguientes librerias:
 
+#### Esp32 & SCD30 & ssd1306 128x32
+- SparkFun_SCD30_Arduino_Library
+- Adafruit_GFX
+- Adafruit_SSD1306
 
 
 
