@@ -27,7 +27,7 @@ de contagio por covid 19.
 
 
 ## Imagenes
-
+<img src="https://github.com/angelo-dising/Boreas/blob/main/FOTOS/photo5141194141462538754.jpg" height="342"/>
 ![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/FOTOS/photo5141194141462538754.jpg)
 ![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/FOTOS/photo5141194141462538751.jpg)
 ![Test Image 4](https://github.com/angelo-dising/Boreas/blob/main/FOTOS/photo5141194141462538750.jpg)
