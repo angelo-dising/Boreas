@@ -21,7 +21,7 @@ de contagio por covid 19.
 
 ## Autores🤖🤖
 
-
+- [Mark77]
 - [Angelo](https://github.com/angelo-dising)
 
 
