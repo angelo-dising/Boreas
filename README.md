@@ -22,7 +22,7 @@ de contagio por covid 19.
 ## Autores🤖🤖
 
 - [Angelo](https://github.com/angelo-dising)
-
+- [Markt77](https://github.com/Markt77)
 
 
 ## Imagenes
@@ -45,7 +45,6 @@ Puedes descargar el gerber [aqui](https://github.com/angelo-dising/Boreas/raw/ma
 - SparkFun_SCD30_Arduino_Library
 - Adafruit_GFX
 - Adafruit_SSD1306
-
 
 
 
